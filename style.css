@@ -127,6 +127,20 @@ h2 {
     padding: 58px 0;
 }
 
+.titulo-pagina {
+    padding: 46px 0 34px;
+    text-align: center;
+    background-color: var(--creme);
+}
+
+.titulo-pagina h1 {
+    margin: 5px 0 10px;
+}
+
+.titulo-pagina p:last-child {
+    margin: 0;
+}
+
 .secao > h2 {
     margin-top: 0;
     text-align: center;
@@ -153,6 +167,42 @@ h2 {
 
 .cartao p {
     margin-bottom: 0;
+}
+
+.grade-cardapio {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.item-cardapio {
+    overflow: hidden;
+    border: 1px solid #eadbca;
+    border-radius: 10px;
+    background-color: var(--branco);
+}
+
+.item-cardapio img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+}
+
+.item-cardapio div {
+    padding: 20px;
+}
+
+.item-cardapio h2 {
+    margin: 0 0 7px;
+    font-size: 1.4rem;
+}
+
+.item-cardapio p {
+    margin: 0 0 12px;
+}
+
+.item-cardapio strong {
+    color: var(--verde);
 }
 
 .icone {
@@ -199,7 +249,8 @@ footer {
     }
 
     .destaque-conteudo,
-    .vantagens {
+    .vantagens,
+    .grade-cardapio {
         grid-template-columns: 1fr;
     }
 
